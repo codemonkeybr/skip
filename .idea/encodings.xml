@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-cart-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-cart-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-cart-message-handler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-cart-resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-infrastructure" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-product-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-product-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-product-message-handler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/skip-product-resources" charset="UTF-8" />
+  </component>
+</project>

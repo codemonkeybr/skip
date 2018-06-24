@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="skip-cart" />
+        <module name="skip-cart-common" />
+        <module name="skip-cart-data" />
+        <module name="skip-cart-message-handler" />
+        <module name="skip-cart-resources" />
+        <module name="skip-infrastructure" />
+        <module name="skip-product" />
+        <module name="skip-product-common" />
+        <module name="skip-product-data" />
+        <module name="skip-product-message-handler" />
+        <module name="skip-product-resources" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
