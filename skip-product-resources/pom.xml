@@ -16,7 +16,7 @@
         <!-- Modules -->
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>skip-cart-common</artifactId>
+            <artifactId>skip-product-common</artifactId>
         </dependency>
     </dependencies>
 </project>
