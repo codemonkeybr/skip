@@ -5,7 +5,9 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
     <include file="classpath:config/liquibase/changelog/201806241343_initial.xml"/>
-
+    <include file="classpath:config/liquibase/changelog/201806241414_cart.xml"/>
+    <include file="classpath:config/liquibase/changelog/201806241419_product.xml"/>
+    <include file="classpath:config/liquibase/changelog/201806241421_item.xml"/>
 
 
 </databaseChangeLog>
