@@ -6,7 +6,7 @@ This challenge was focusing on using an 'Event-Carried State Transfer'concept wh
 
 ![Project Structure](https://github.com/codemonkeybr/skip/blob/master/files/structure.png)
 
-# How to Run it
+## How to Run it
 * In order do keycloack work properly on docker and localhost enviroment add `127.0.0.1	keycloak` to your /etc/hosts file (Unix plataform, or find the hosts file and add it to windows plataform
 
 1. `docker-compose up` will initalize databases, rabbitmq and keycloak
@@ -14,3 +14,7 @@ This challenge was focusing on using an 'Event-Carried State Transfer'concept wh
 3. The module skip-product will make the Product API run
 
 * Both apis are visible on swagger on at `http://localhost:8082/swagger-ui.html` (Cart API) and `http://localhost:8082/swagger-ui.html` (Product API) use user `user`and pass `pass` on both to authenticate.
+
+## auto run
+* run `start-local.sh` to start an automated script that generate docker container for both apis and make everthing up and running
+* run `stop-local.sh` to stop it
