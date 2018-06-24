@@ -14,10 +14,10 @@ This challenge was focusing on using an 'Event-Carried State Transfer'concept wh
 3. The module skip-product will make the Product API run
 
 `cd skip-product`
-`mvn exec:java -Dexec.mainClass=org.tesso.skip.product.ProductApplication`
+`mvn spring-boot:run`
 
 `cd skip-cart`
-`mvn exec:java -Dexec.mainClass=org.tesso.skip.product.CartApplication`
+`mvn spring-boot:run`
 
 * Both apis are visible on swagger on at `http://localhost:8082/swagger-ui.html` (Cart API) and `http://localhost:8082/swagger-ui.html` (Product API) use user `user`and pass `pass` on both to authenticate.
 
