@@ -2,9 +2,9 @@ package org.tesso.skip.cart.message.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.tesso.just.food.infraestructure.event.Product;
 import org.tesso.skip.cart.common.data.ProductDataService;
 import org.tesso.skip.cart.common.entities.ProductEntity;
+import org.tesso.skip.infrastructure.event.Product;
 
 import java.util.concurrent.CountDownLatch;
 
