@@ -1,4 +1,4 @@
-package org.tesso.just.food.infraestructure.event;
+package org.tesso.skip.infrastructure.event;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
