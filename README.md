@@ -22,7 +22,7 @@ mvn spring-boot:run
 ```
 
 
-* Both apis are visible on swagger on at `http://localhost:8082/swagger-ui.html` (Cart API) and `http://localhost:8082/swagger-ui.html` (Product API) use user `user`and pass `pass` on both to authenticate.
+* Both apis are visible on swagger on at `http://localhost:8081/swagger-ui.html` (Cart API) and `http://localhost:8082/swagger-ui.html` (Product API) use user `user`and pass `pass` on both to authenticate.
 
 ## auto run
 * run `start-local.sh` to start an automated script that generate docker container for both apis and make everthing up and running
