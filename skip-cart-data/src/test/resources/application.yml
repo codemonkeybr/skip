@@ -1,0 +1,19 @@
+# Datasource
+spring:
+  datasource:
+    url: jdbc:h2:file:./target/skip;DB_CLOSE_DELAY=-1
+    username: skip
+    password: skip
+    driverClassName: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: classpath:config/liquibase/master.xml
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+  h2:
+    console:
+      enabled: true
