@@ -1,14 +1,14 @@
 # Server
 server:
   version: @project.version@
-  port: 8082
+  port: 8081
 
 # Spring
 spring:
   application:
-    name: Skip Product
+    name: Skip Cart
   datasource:
-    url: jdbc:postgresql://localhost:5432/skip_product
+    url: jdbc:postgresql://localhost:5432/skip_cart
     username: skip_user
     password: skip_pass
     driverClassName: org.postgresql.Driver
@@ -29,14 +29,14 @@ spring:
 keycloak:
   auth-server-url: http://localhost:8080/auth
   realm: skip
-  resource: skip-product
+  resource: skip-cart
   public-client: false
   bearer-only: true
   use-resource-role-mappings: true
   credentials:
     secret: 0a136a91-4e4d-4275-990e-1fb4dfda61ec
   security-constraints[0]:
-    authRoles[0]: product
+    authRoles[0]: cart
     securityCollections[0]:
       patterns[0]: /api/*
 
