@@ -1,0 +1,36 @@
+version: '2'
+services:
+  postgres:
+    image: timnn/postgres-multi:latest
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USERS=skip_user:skip_pass
+      - POSTGRES_DATABASES=keycloak:skip_user|skip_cart:skip_user|skip_product:skip_user
+      - MAX_CONNECTIONS=100
+
+  rabbitmq:
+    image: rabbitmq:3.6-management-alpine
+    ports:
+      - "5671:5671"
+      - "5672:5672"
+      - "15672:15672"
+
+  keycloak:
+    image: jboss/keycloak:4.0.0.Final
+    ports:
+       - "8080:8080"
+    command: ["-b", "0.0.0.0", "-Dkeycloak.migration.action=import", "-Dkeycloak.migration.provider=dir", "-Dkeycloak.migration.dir=/opt/jboss/keycloak/realm-config/", "-Dkeycloak.migration.strategy=OVERWRITE_EXISTING"]
+    volumes:
+       - ./files/keycloak:/opt/jboss/keycloak/realm-config
+    environment:
+       - KEYCLOAK_USER=admin
+       - KEYCLOAK_PASSWORD=admin
+       - DB_ADDR=postgres
+       - DB_PORT=5432
+       - DB_VENDOR=POSTGRES
+       - DB_DATABASE=keycloak
+       - DB_USER=skip_user
+       - DB_PASSWORD=skip_pass
+    depends_on:
+      - postgres

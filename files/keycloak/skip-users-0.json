@@ -1,0 +1,23 @@
+{
+  "realm": "skip",
+  "users": [
+    {
+      "username": "user",
+      "email": "user@user.ca",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Firstname",
+      "lastName": "Lastname",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "pass",
+          "temporary": false
+        }
+      ],
+      "groups": [
+        "end-user"
+      ]
+    }
+  ]
+}
