@@ -1,0 +1,47 @@
+# Server
+server:
+  version: @project.version@
+  port: 8082
+
+# Spring
+spring:
+  application:
+    name: Skip
+  datasource:
+    url: jdbc:postgresql://localhost:5432/skip_product
+    username: skip_user
+    password: skip_pass
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        temp.use_jdbc_metadata_defaults: false
+  liquibase:
+    change-log: classpath:config/liquibase/master.xml
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+
+# Keycloak
+keycloak:
+  auth-server-url: http://localhost:8080/auth
+  realm: skip
+  resource: skip-product
+  public-client: false
+  bearer-only: true
+  use-resource-role-mappings: true
+  credentials:
+    secret: 0a136a91-4e4d-4275-990e-1fb4dfda61ec
+  security-constraints[0]:
+    authRoles[0]: product
+    securityCollections[0]:
+      patterns[0]: /api/*
+
+# Swagger
+swagger:
+  auth:
+    token-url: ${keycloak.auth-server-url}/realms/${keycloak.realm}/protocol/openid-connect/token/
+    client-id: skip-local
