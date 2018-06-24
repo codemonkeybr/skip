@@ -1,5 +1,7 @@
 # skip challenge
 
+This challenge was focusing on using an 'Event-Carried State Transfer'concept where the product gets inserted/updated/deleted and it dispatches and event, the other (product) api(s) will listen and act by receiving the event and doing something about it (updating its information, or making the produc avaliable/unavaliable for use)
+
 ## Project Structure
 
 ![Project Structure](https://github.com/codemonkeybr/skip/blob/master/files/structure.png)
